@@ -27,6 +27,6 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Installing npm
-      run: npm install -g surge
+      run: npm install -global surge
     - name: Deploying on surge
       run: surge ./ practice-auto-deploy2.surge.sh --token ${{ secrects.SURGE_TOKEN }}
